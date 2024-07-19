@@ -19,8 +19,10 @@ int main()
     std::cout << "to_lower_case: " << to_lower_case(in_text) << '\n';
     std::cout << "string_length: " << string_length(in_text) << '\n';
     std::cout << std::boolalpha;
-    std::cout << "jan == jan: " << string_equal(in_text, compare_text1) << '\n';
-    std::cout << "jan == ja: " << string_equal(in_text, compare_text2) << '\n';
+    std::cout << "jan == jan: " << string_equal(compare_text1, compare_text1)
+              << '\n';
+    std::cout << "jan == ja: " << string_equal(compare_text1, compare_text2)
+              << '\n';
 
     test_cases(); // This should not fail
 
